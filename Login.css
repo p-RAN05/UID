@@ -1,0 +1,13 @@
+#fo{backdrop-filter:blur(10px);
+margin:100px;padding: 50px;
+width: 20%;
+align-content: center;
+}
+
+body{background-image: url('360_F_123731572_KMfBEkpbRlfQj1ypdPVwv4W0r27B9hVJ.webp');
+background-repeat: no-repeat;
+background-size: 150%;
+}
+input{border-radius: 5px;
+display: inline-block;}
+input[type="submit"]{background-color:darkseagreen;border-radius:5px;}
