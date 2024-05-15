@@ -1,0 +1,80 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport" content= "width=device-width, 
+									initial-scale=1.0"> 
+	<title>CGPA Calculator</title> 
+	<link rel="stylesheet" href="cgpa.css"> 
+	<script src="cgpa.js"></script>
+</head> 
+
+<body> 
+	<div id="course">
+		<h2>Add Course</h2>
+		<label for="cor">Enter Course</label>
+		<input id="cor" type="text" >
+		<button type="submit" onclick="addOption()" >Add</button>
+		</div>
+	<div id="calculator"> 
+		<span id="creditError" class="error"></span> 
+		<span id="inputError" class="error"></span> 
+		<br> 
+		<h2>CGPA Calculator</h2> 
+		<form id="cgpaForm"> 
+
+			<label for="subject">Subject:</label> 
+			<select id="subject" required> 
+					<option value="Object Oriented Programming">23CSE111:Object Oriented Programming </option>
+					<option value="User Interface Design ">23CSE113:User Interface Design</option>
+					<option value="Discrete Mathematics">23MAT116:Discrete Mathematics</option>
+					<option value="Linear Algebra">22MAT117:Linear Algebra</option>
+					<option value="Manufacturing Price">23MAT115:Manufacturing Practice</option>
+					<option value="Modern Physics">23PHY115:Modern Physics </option>
+					</select>
+
+			<label for="grade">Grade:</label> 
+			<select id="grade"> 
+				<option value="S">S</option> 
+				<option value="A">A</option> 
+				<option value="B">B</option> 
+				<option value="C">C</option> 
+				<option value="D">D</option> 
+				<option value="F">F</option> 
+			</select> 
+
+			<label for="credit">Credit:</label> 
+			<input type="number" id="credit" min="1" required> 
+
+			<button type="button" onclick="addSubject()"> 
+				Add / Edit Subject 
+			</button> 
+		</form> 
+		<h3>Calculate CGPA</h3> 
+		<table id="subjectTable"> 
+			<thead> 
+				<tr> 
+					<th>Subject</th> 
+					<th>Grade</th> 
+					<th>Credit</th> 
+					<th>Action</th> 
+				</tr> 
+			</thead> 
+			<tbody id="subjectList"></tbody> 
+		</table> 
+
+		<h3>CGPA: <span id="cgpa">0.00</span></h3> 
+
+		<button id="butt1" type="button" onclick="Mohan()"> 
+			Calculate CGPA 
+		</button> 
+		<button type="button" onclick="resetForm()"> 
+			Reset 
+		</button> 
+	</div> 
+	<script src="cgpa.js"></script> 
+
+</body> 
+
+</html>
