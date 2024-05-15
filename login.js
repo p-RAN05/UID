@@ -1,13 +1,15 @@
 function Change(){
-    window.location.href='CGPA.html';
+    window.location.href='sample1.html';
 }
 function check(){
-const user=document.getElementById('user').value;
+    const user=document.getElementById('user').value;
 const pas=document.getElementById('pass').value;
-if (user=='pranav_07'&& pas=='200519'){
+if (user=='admin'&& pas=='admin123'){
     Change();
+
 }
 else{
-    alert('Either your username or password is wrong or else both are wrong, Try Again');
+    alert('Either your username or password is wrong, Try Again');
+
 }
 }
